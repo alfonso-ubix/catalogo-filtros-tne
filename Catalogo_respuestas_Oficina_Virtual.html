@@ -2,7 +2,7 @@
   Catálogo de Respuestas — Revisor Oficina Virtual TNE
   Ubix Tecnología Limitada — Contrato JUNAEB ID 85-52-LR24
   Versión: 1.1
-  Fecha de emisión: Abril 2026
+  Fecha de emisión: Mayo 2026
   Generado: 2026-05-12
 -->
 <!DOCTYPE html>
@@ -869,7 +869,7 @@ main {
 // ============ DATOS DEL CATÁLOGO ============
 // Textos comprimidos para caber en aplicativo con límite de 500 chars
 const CATALOGO = [
-  {cod:"A-01",cat:"Fotografia",causal:"No cumple patron (fondo y encuadre)",texto:"La fotografia no cumple el patron. Debe ser tipo carnet: fondo blanco liso, rostro completo y descubierto, primer plano de cabeza y hombros. Cargue una nueva fotografia que cumpla estas caracteristicas.",fund:"M.O. 2.20.5"},
+  {cod:"A-01",cat:"Fotografia",causal:"No cumple patron (fondo y encuadre)",texto:"La fotografia no cumple el patron. Debe ser tipo carnet: fondo blanco liso, rostro completo y descubierto, primer plano de cabeza y hombros.",fund:"M.O. 2.20.5"},
   {cod:"A-02",cat:"Fotografia",causal:"Borrosa o sin nitidez",texto:"La fotografia esta borrosa. Cargue una nueva fotografia nitida, sin desenfoque, sombras ni exceso de luz.",fund:"M.O. 2.20.5"},
   {cod:"A-03",cat:"Fotografia",causal:"Rostro no descubierto / accesorios que impiden identificar",texto:"La fotografia no permite identificar al titular. Cargue una nueva con el rostro completamente visible, sin lentes oscuros, gorros, audifonos ni accesorios que cubran las facciones.",fund:"M.O. 2.20.5"},
   {cod:"A-04",cat:"Fotografia",causal:"Encuadre incorrecto (rostro no centrado)",texto:"El encuadre no es correcto. Cargue una nueva fotografia en primer plano de cabeza y hombros, con el rostro centrado.",fund:"M.O. 2.20.5"},
@@ -883,13 +883,13 @@ const CATALOGO = [
   {cod:"B-06",cat:"Certificado Alumno Regular",causal:"Certificado no vigente (Educacion Basica y Media)",texto:"Su Certificado de Alumno Regular no se encuentra vigente, debe ser del ano en curso.",fund:"M.O. 2.1.3"},
   {cod:"C-01",cat:"Comprobante de Pago",causal:"Falta Comprobante de Pago",texto:"Falta el Comprobante de Pago. Cargue el voucher de $3.600 depositado en la cuenta JUNAEB N 9000097 de Banco Estado, o el comprobante de pago en linea TGR.",fund:"M.O. 2.1.3"},
   {cod:"C-02",cat:"Comprobante de Pago",causal:"Comprobante ilegible o incompleto",texto:"El Comprobante de Pago no es legible o esta incompleto. Cargue una imagen nitida y completa del voucher o comprobante TGR.",fund:"M.O. 2.1.3"},
-  {cod:"C-03",cat:"Comprobante de Pago",causal:"Folio invalido o ya utilizado",texto:"El folio del comprobante no es valido o ya fue utilizado. Seleccione nuevamente \"Comprobante de deposito\". Si el folio aparece como utilizado, agregue un cero al final (ej. 88585 -> 885850) y reintente.",fund:"Of. Virtual TNE"},
+  {cod:"C-03",cat:"Comprobante de Pago",causal:"Folio invalido o ya utilizado",texto:"El folio del comprobante no es valido o ya fue utilizado. Seleccione nuevamente (Comprobante de deposito). Si el folio aparece como utilizado, agregue un cero al final (ej. 88585 - 885850) y reintente.",fund:"Of. Virtual TNE"},
   {cod:"C-04",cat:"Comprobante de Pago",causal:"Cuenta de destino incorrecta",texto:"El deposito no fue hecho en la cuenta correcta. Pague en la cuenta JUNAEB N 9000097 de Banco Estado (Banco Estado, ServiEstado, Caja Vecina) o por el boton TGR. Regularice y cargue el nuevo comprobante.",fund:"M.O. 2.1.3"},
   {cod:"C-05",cat:"Comprobante de Pago",causal:"Pago por transferencia electronica (no aceptada)",texto:"No se aceptan transferencias electronicas. Pague en Banco Estado, ServiEstado o Caja Vecina, o por WebPay (Oficina Virtual) o TGR. Pague por una via autorizada y cargue el comprobante.",fund:"M.O. 2.1.3"},
-  {cod:"C-06",cat:"Comprobante de Pago",causal:"Pago TGR rechazado: instruccion de reingreso",texto:"Si pago por TGR y su expediente fue rechazado, en la nueva solicitud seleccione \"Comprobante de deposito\" e ingrese el codigo del expediente rechazado. Puede adjuntar el comprobante recibido por correo (opcional).",fund:"Of. Virtual TNE"},
-  {cod:"C-07",cat:"Comprobante de Pago",causal:"Pago WebPay rechazado: instruccion de reingreso",texto:"Si pago por WebPay y su expediente fue rechazado, en la nueva solicitud seleccione \"Comprobante de deposito\" e ingrese el mismo folio. Si aparece como utilizado, agregue un cero al final y reintente.",fund:"Of. Virtual TNE"},
+  {cod:"C-06",cat:"Comprobante de Pago",causal:"Pago deposito rechazado: instruccion de reingreso",texto:"Si pago por deposito y su expediente fue rechazado, en la nueva solicitud seleccione (Comprobante de deposito) e ingrese el mismo folio. Si aparece como utilizado, agregue un cero al final y reintente.",fund:"Of. Virtual TNE"},
+  {cod:"C-07",cat:"Comprobante de Pago",causal:"Pago TGR rechazado: instruccion de reingreso",texto:"Si pago por TGR y su expediente fue rechazado, en la nueva solicitud seleccione (Comprobante de deposito) e ingrese el mismo folio. Si aparece como utilizado, agregue un cero al final y reintente.",fund:"Of. Virtual TNE"},
   {cod:"C-08",cat:"Comprobante de Pago",causal:"Comprobante del banco, no de Tesoreria",texto:"El comprobante adjunto es del banco, no de Tesoreria. Cargue el comprobante generado por la TGR e ingrese el \"Folio\" del comprobante TGR (no el \"Identificador\" del banco).",fund:"Of. Virtual TNE"},
-  {cod:"D-01",cat:"Cedula de Identidad",causal:"Falta parte frontal",texto:"Falta la parte frontal de la cedula de identidad. Cargue una imagen clara del anverso del documento.",fund:"M.O. 2.1.3"},
+  {cod:"D-01",cat:"Cedula de Identidad",causal:"Falta parte frontal",texto:"Falta la parte frontal de la cedula de identidad. Cargue una imagen clara del documento.",fund:"M.O. 2.1.3"},
   {cod:"D-02",cat:"Cedula de Identidad",causal:"Cedula vencida",texto:"La cedula de identidad esta vencida. Cargue una vigente. Si esta en proceso de renovacion, puede usar el comprobante del Registro Civil con fotografia.",fund:"M.O. 2.1.3"},
   {cod:"D-03",cat:"Cedula de Identidad",causal:"Cedula ilegible o de baja calidad",texto:"La imagen de la cedula no es legible. Cargue una imagen nitida y completa donde se distingan todos los datos del documento.",fund:"M.O. 2.1.3"},
   {cod:"D-04",cat:"Cedula de Identidad",causal:"Documento de identidad no aceptado",texto:"El documento de identidad no es aceptado. Documentos validos: cedula vigente, pasaporte chileno vigente, Identificador Provisorio Escolar (IPE) con pasaporte del pais de origen vigente (extranjeros), o comprobante del Registro Civil con fotografia. Cargue uno de estos.",fund:"M.O. 2.1.3"},
@@ -1267,4 +1267,3 @@ init();
 
 </body>
 </html>
-
