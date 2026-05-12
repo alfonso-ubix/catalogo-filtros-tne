@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo Filtros de Fila TNE — Ubix</title>
+<style>:root{--azul-primario:#013972;--azul-oscuro:#0E1F4B;--azul-celeste:#58BEFC;--azul-celeste-soft:#E5F4FE;--gris-texto:#1F2937;--gris-medio:#6B7280;--gris-claro:#F3F4F6;--gris-borde:#E5E7EB;--blanco:#FFFFFF;--rojo:#DC2626;--rojo-soft:#FEE2E2;--verde:#059669;--verde-soft:#D1FAE5;--ambar:#D97706;--ambar-soft:#FEF3C7;--sombra-sm:0 1px 2px rgba(1,57,114,0.04);--sombra-md:0 4px 12px rgba(1,57,114,0.08);--radius:8px;--radius-sm:4px}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-size:14px;line-height:1.5;color:var(--gris-texto);background:var(--gris-claro);min-height:100vh;-webkit-font-smoothing:antialiased}header{background:var(--azul-oscuro);color:var(--blanco);padding:16px 24px;border-bottom:4px solid var(--azul-celeste);position:sticky;top:0;z-index:100;box-shadow:var(--sombra-md)}.header-row{display:flex;align-items:center;gap:16px;max-width:1400px;margin:0 auto}.brand{display:flex;align-items:center;gap:12px}.brand-logo{width:40px;height:40px;background:var(--azul-celeste);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--azul-oscuro);font-size:18px}.brand-text h1{font-size:16px;font-weight:700;letter-spacing:0.2px}.brand-text .subtitle{font-size:12px;opacity:0.85;margin-top:2px}.version-badge{margin-left:auto;background:rgba(255,255,255,0.12);padding:6px 12px;border-radius:999px;font-size:11px;font-weight:600}.toolbar{background:var(--blanco);border-bottom:1px solid var(--gris-borde);padding:12px 24px;position:sticky;top:73px;z-index:90}.toolbar-row{display:flex;align-items:center;gap:12px;max-width:1400px;margin:0 auto;flex-wrap:wrap}.search-box{flex:1;min-width:240px;position:relative}.search-box input{width:100%;padding:10px 14px 10px 38px;border:1.5px solid var(--gris-borde);border-radius:var(--radius);font-size:14px;font-family:inherit;background:var(--gris-claro);transition:border-color 150ms ease,background 150ms ease}.search-box input:focus{outline:none;border-color:var(--azul-celeste);background:var(--blanco)}.search-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--gris-medio);pointer-events:none}.btn{padding:9px 14px;border-radius:var(--radius);border:none;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;display:inline-flex;align-items:center;gap:6px;transition:all 150ms ease;white-space:nowrap}.btn-secondary{background:var(--blanco);color:var(--azul-primario);border:1.5px solid var(--gris-borde)}.btn-secondary:hover{border-color:var(--azul-celeste);background:var(--azul-celeste-soft)}.container{max-width:1400px;margin:0 auto;padding:20px 24px 60px;display:grid;grid-template-columns:260px 1fr;gap:20px}@media (max-width:900px){.container{grid-template-columns:1fr}.sidebar{position:static;max-height:none}}.sidebar{position:sticky;top:138px;align-self:start;max-height:calc(100vh - 160px);overflow-y:auto}.sidebar-card{background:var(--blanco);border-radius:var(--radius);border:1px solid var(--gris-borde);overflow:hidden;box-shadow:var(--sombra-sm)}.sidebar-header{padding:12px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.6px;color:var(--gris-medio);background:var(--gris-claro);border-bottom:1px solid var(--gris-borde)}.cat-list{padding:4px 0}.cat-item{display:flex;align-items:center;justify-content:space-between;padding:9px 14px;cursor:pointer;color:var(--gris-texto);font-size:13px;font-weight:500;border-left:3px solid transparent;transition:all 120ms ease}.cat-item:hover{background:var(--azul-celeste-soft);color:var(--azul-primario)}.cat-item.active{background:var(--azul-celeste-soft);color:var(--azul-primario);border-left-color:var(--azul-celeste);font-weight:600}.cat-count{font-size:11px;background:var(--gris-claro);color:var(--gris-medio);padding:2px 8px;border-radius:999px;font-weight:600}.cat-item.active .cat-count{background:var(--azul-celeste);color:var(--blanco)}.main{min-width:0}.section-title{font-size:18px;font-weight:700;color:var(--azul-primario);margin-bottom:4px}.section-desc{font-size:13px;color:var(--gris-medio);margin-bottom:16px}.qa-card{background:var(--blanco);border-radius:var(--radius);border:1px solid var(--gris-borde);margin-bottom:10px;overflow:hidden;transition:box-shadow 150ms ease,border-color 150ms ease}.qa-card:hover{border-color:var(--azul-celeste);box-shadow:var(--sombra-md)}.qa-question{padding:14px 18px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:600;font-size:14px;color:var(--gris-texto);user-select:none}.qa-question:hover{color:var(--azul-primario)}.qa-question-text{display:flex;align-items:center;gap:10px;flex:1}.qa-tag{display:inline-flex;align-items:center;padding:3px 9px;background:var(--azul-celeste-soft);color:var(--azul-primario);border-radius:999px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.4px;white-space:nowrap}.qa-tag.alerta{background:var(--rojo-soft);color:var(--rojo)}.qa-tag.ok{background:var(--verde-soft);color:var(--verde)}.qa-tag.advertencia{background:var(--ambar-soft);color:var(--ambar)}.qa-chevron{color:var(--gris-medio);transition:transform 200ms ease;flex-shrink:0}.qa-card.open .qa-chevron{transform:rotate(180deg)}.qa-answer{display:none;padding:0 18px 16px;font-size:13.5px;color:var(--gris-texto);line-height:1.65;border-top:1px solid var(--gris-borde);padding-top:14px;white-space:pre-wrap}.qa-card.open .qa-answer{display:block}.qa-meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px;padding-top:10px;border-top:1px dashed var(--gris-borde);font-size:11.5px;color:var(--gris-medio)}.qa-meta strong{color:var(--gris-texto)}.highlight{background:#FEF08A;padding:1px 2px;border-radius:2px}.empty{text-align:center;padding:60px 20px;color:var(--gris-medio);background:var(--blanco);border-radius:var(--radius);border:1px dashed var(--gris-borde)}.empty h3{color:var(--gris-texto);font-size:16px;margin-bottom:6px}.stats-bar{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}.stat-pill{background:var(--blanco);border:1px solid var(--gris-borde);border-radius:999px;padding:6px 14px;font-size:12px;font-weight:600;color:var(--gris-texto);display:inline-flex;align-items:center;gap:6px}.stat-pill .stat-num{color:var(--azul-primario);font-weight:700}.footer-info{margin-top:30px;padding:16px;background:var(--azul-celeste-soft);border-left:3px solid var(--azul-celeste);border-radius:var(--radius-sm);font-size:12.5px;color:var(--gris-texto)}.footer-info strong{color:var(--azul-primario)}@media print{header,.toolbar,.sidebar{display:none !important}.container{grid-template-columns:1fr;padding:0}.qa-card{break-inside:avoid;border:1px solid #ccc;box-shadow:none}.qa-card .qa-answer{display:block !important}body{background:white}}</style>
+</head>
+<body>
+<header><div class="header-row"><div class="brand"><div class="brand-logo">U</div><div class="brand-text"><h1>Catálogo de Consulta Rápida — Filtros de Fila</h1><div class="subtitle">Oficinas TNE · Ubix Tecnología Ltda. · Contrato JUNAEB 85-52-LR24</div></div></div><div class="version-badge">v.12-05-2026</div></div></header>
+<div class="toolbar"><div class="toolbar-row"><div class="search-box"><span class="search-icon">🔍</span><input type="text" id="searchInput" placeholder="Buscar por palabra clave… (ej: reposición, sello, retiro, postgrado)"></div><button class="btn btn-secondary" id="btnExpand">Expandir todo</button><button class="btn btn-secondary" id="btnCollapse">Colapsar</button><button class="btn btn-secondary" id="btnPrint">🖨 Imprimir</button></div></div>
+<div class="container"><aside class="sidebar"><div class="sidebar-card"><div class="sidebar-header">Categorías</div><div class="cat-list" id="categoryList"></div></div></aside><main class="main"><div class="stats-bar"><div class="stat-pill">📚 <span class="stat-num" id="statTotal">0</span> preguntas</div><div class="stat-pill">📁 <span class="stat-num" id="statCategorias">0</span> categorías</div><div class="stat-pill">👁 <span class="stat-num" id="statVisibles">0</span> visibles</div></div><h2 class="section-title" id="sectionTitle">Todas las preguntas</h2><p class="section-desc" id="sectionDesc">Selecciona una categoría a la izquierda o busca por palabra clave.</p><div id="contentArea"></div><div class="footer-info"><strong>Recordatorio operacional:</strong> Este catálogo es una ayuda de consulta rápida. Ante cualquier duda no resuelta, consulta a la jefatura de oficina. Las respuestas se basan en el Manual de Procedimientos JUNAEB 2025–2027 y el Protocolo de Atención Transversal (Resolución Exenta N°2449). En caso de detectar información desactualizada, repórtalo a la jefatura para su corrección en el catálogo.</div></main></div>
+<script>
+var __DATA__ = {
+  "meta": {
+    "title": "Catálogo de Consulta Rápida — Filtros de Fila",
+    "version": "1.0",
+    "lastUpdate": "2025-05-12",
+    "organization": "Ubix Tecnología Ltda. — Contrato JUNAEB 85-52-LR24"
+  },
+  "categories": [
+    {
+      "id": "rol",
+      "name": "Rol y funciones del filtro"
+    },
+    {
+      "id": "tramites",
+      "name": "Tipos de trámite TNE"
+    },
+    {
+      "id": "reposicion",
+      "name": "Reposición de TNE"
+    },
+    {
+      "id": "entrega",
+      "name": "Entrega y retiro de TNE"
+    },
+    {
+      "id": "nueva",
+      "name": "TNE nueva del nivel"
+    },
+    {
+      "id": "revalidacion",
+      "name": "Revalidación (sello / tecnológica)"
+    },
+    {
+      "id": "postgrado",
+      "name": "Postgrado y casos especiales"
+    },
+    {
+      "id": "saldo",
+      "name": "Saldo, bloqueo y problemas de chip"
+    },
+    {
+      "id": "horarios",
+      "name": "Horarios y cierre de jornada"
+    },
+    {
+      "id": "preferente",
+      "name": "Atención preferente e inclusiva"
+    },
+    {
+      "id": "conducta",
+      "name": "Conducta y buenas prácticas"
+    },
+    {
+      "id": "sistemas",
+      "name": "Gestor de filas y sistemas"
+    }
+  ],
+  "items": [
+    {
+      "id": "q001",
+      "category": "rol",
+      "tag": "",
+      "question": "¿Cuál es el objetivo principal del puesto de filtro de fila?",
+      "answer": "Recibir, orientar y ordenar el flujo de estudiantes, apoderados y público general que acuden a realizar trámites asociados a la TNE, contribuyendo a una atención presencial ordenada, clara y oportuna.\n\nEl filtro de fila NO atiende el trámite — clasifica, deriva y descongestiona.",
+      "keywords": "objetivo, función, rol, qué hace, propósito",
+      "source": "Manual filtros de fila — Objetivo del cargo",
+      "derivar": "",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q002",
+      "category": "rol",
+      "tag": "",
+      "question": "¿De quién depende operativamente el filtro de fila?",
+      "answer": "Depende operativamente de la jefatura de oficina. Debe coordinarse con:\n- Operadores de módulos\n- Guardia de seguridad\n- Personal de apoyo de la oficina\n\nAnte dudas, reclamos complejos o situaciones especiales, escalar a jefatura inmediatamente.",
+      "keywords": "dependencia, jefatura, coordinación, jerarquía",
+      "source": "Manual filtros de fila — Dependencia y coordinación",
+      "derivar": "Jefatura de oficina",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q003",
+      "category": "rol",
+      "tag": "",
+      "question": "¿Qué hago al inicio de la jornada antes de abrir al público?",
+      "answer": "1. Presentarse oportunamente en el puesto.\n2. Informarse de contingencias del día con jefatura.\n3. Confirmar si hay cambios en tipos de trámite, prioridades, horarios o indisponibilidad de sistemas.\n4. Verificar que el acceso al público esté despejado.\n5. Revisar que la señalética visible esté en orden.",
+      "keywords": "inicio, jornada, apertura, preparación, contingencia",
+      "source": "Manual filtros de fila — Procedimiento de atención (1)",
+      "derivar": "",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q010",
+      "category": "tramites",
+      "tag": "",
+      "question": "¿Qué trámites debo reconocer como filtro de fila?",
+      "answer": "Trámites que se realizan en oficinas y módulos TNE:\n- Reposición de TNE\n- Captura fotográfica para tarjeta nueva\n- Entrega de TNE nuevas y de reposición\n- Revalidación tecnológica\n- Revalidación con sello\n- Orientación, consultas y reclamos\n- Otros procesos TNE que surjan durante la ejecución",
+      "keywords": "trámites, tipos, clasificación, listado",
+      "source": "Manual filtros de fila — Trámites que debe reconocer",
+      "derivar": "",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q011",
+      "category": "tramites",
+      "tag": "advertencia",
+      "question": "¿Qué hago si el trámite no corresponde a la oficina TNE?",
+      "answer": "Informar al usuario el canal o punto de atención correcto, evitando espera innecesaria.\n\nCanales frecuentes a derivar:\n- Problemas de validador/saldo Bip! → Oficina tarjetabip!\n- Tarifa cobrada mal en Metro Santiago → 600 730 0073 o oficina servicio cliente Metro\n- Problemas en regiones (transporte) → SEREMI de Transporte / oirs@mtt.cl\n- Trámites web → TNE.cl / Oficina Virtual",
+      "keywords": "derivar, no corresponde, otro canal, bip, metro, mtt",
+      "source": "Manual filtros de fila — Criterios de orientación",
+      "derivar": "Canal correspondiente",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q020",
+      "category": "reposicion",
+      "tag": "alerta",
+      "question": "¿Qué documentos necesita una reposición — Básica/Media municipal o subvencionado?",
+      "answer": "Toda la documentación debe ser ORIGINAL e IMPRESA (no copias):\n\n1. Certificado de alumno regular con timbre y firma original (o con código de validación).\n2. Constancia de Carabineros (comisariavirtual.cl) por extravío/robo, impresa. Para RM la Declaración Jurada Simple debe tener timbre de Carabineros.\n3. Si la TNE está deteriorada: presentarla y se omite la constancia (folio debe ser legible).\n4. Cédula de identidad vigente. Si es menor de 18: certificado de nacimiento impreso.\n5. Comprobante de depósito $3.600 en Cuenta Corriente Banco Estado N° 9000097 (Banco Estado, ServiEstado o Caja Vecina). NO se acepta transferencia electrónica.\n6. Cursos 2X1: el CAR tiene vigencia de 30 días desde emisión.",
+      "keywords": "reposición, básica, media, municipal, subvencionado, documentos, requisitos, 3600, depósito",
+      "source": "Preguntas frecuentes — Reposición Básica/Media municipal",
+      "derivar": "Módulo de reposición",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q021",
+      "category": "reposicion",
+      "tag": "alerta",
+      "question": "¿Qué documentos necesita una reposición — Colegio Particular Pagado?",
+      "answer": "Documentación ORIGINAL e IMPRESA:\n\n1. Certificado de alumno regular con timbre y firma original (o código de validación).\n2. \"Certificación de regularidad reposición\" emitida por el establecimiento, con firma y timbre original.\n3. Declaración Jurada Notarial original.\n4. Constancia de Carabineros por extravío/robo (comisariavirtual.cl). En RM, la Declaración Jurada Simple requiere timbre de Carabineros.\n5. Si la TNE está deteriorada: presentarla (folio legible) y omitir constancia.\n6. Cédula vigente o certificado de nacimiento impreso si es menor de 18.\n7. Comprobante depósito $3.600 Banco Estado Cta. Cte. 9000097.",
+      "keywords": "reposición, particular, pagado, declaración jurada notarial, certificación regularidad",
+      "source": "Preguntas frecuentes — Reposición particular pagado",
+      "derivar": "Módulo de reposición",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q022",
+      "category": "reposicion",
+      "tag": "alerta",
+      "question": "¿Qué documentos necesita una reposición — Educación Superior?",
+      "answer": "Documentación ORIGINAL e IMPRESA:\n\n1. Certificado de alumno regular con timbre y firma original (o código de validación).\n2. CAR no puede superar 30 días desde emisión y debe corresponder al periodo educacional en curso (año, semestre, bimestre o trimestre).\n3. Constancia de Carabineros (comisariavirtual.cl) por extravío/robo. En RM la Declaración Jurada Simple requiere timbre de Carabineros.\n4. Si tiene TNE deteriorada: presentarla con folio legible.\n5. Cédula, pasaporte chileno, licencia de conducir vigente o comprobante de retiro de CI.\n6. Comprobante depósito $3.600 Banco Estado Cta. Cte. 9000097 (Banco Estado, ServiEstado, Caja Vecina o pagar en TNE.cl). NO transferencia electrónica.\n7. Postgrado (Magíster/Doctorado): además Carta de Desmedro Socioeconómico institucional firmada y timbrada (o digital con código de verificación validable).\n8. Migrantes: documentación de identidad según su situación.",
+      "keywords": "reposición, superior, universitario, CAR, 30 días, postgrado, migrante",
+      "source": "Preguntas frecuentes — Reposición Superior",
+      "derivar": "Módulo de reposición",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q023",
+      "category": "reposicion",
+      "tag": "advertencia",
+      "question": "¿Cuánto cuesta la reposición y cómo se paga?",
+      "answer": "Costo: $3.600\n\nFormas de pago aceptadas:\n- Sucursal Banco Estado\n- ServiEstado\n- Caja Vecina\n- Página web TNE.cl → sección \"Paga tu reposición\"\n\nCuenta: Corriente Banco Estado N° 9000097 a nombre de JUNAEB.\n\n⚠️ IMPORTANTE: NO se acepta pago por transferencia electrónica. El usuario debe presentar el voucher original del depósito.",
+      "keywords": "costo, precio, 3600, pago, banco estado, transferencia, voucher",
+      "source": "Preguntas frecuentes — Costo reposición",
+      "derivar": "",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q030",
+      "category": "entrega",
+      "tag": "",
+      "question": "¿Cuándo se entrega la TNE de reposición según la oficina?",
+      "answer": "Depende del lugar donde se realiza el trámite:\n\nENTREGA IN SITU (mismo día):\n- RM: Maipú, La Florida, Puente Alto, Providencia, Santiago\n- Concepción, Temuco, Valparaíso, Viña del Mar\n\nRETIRO 7 DÍAS HÁBILES (en la misma sucursal):\n- Módulos RM: Colina, Talagante, Melipilla\n- Oficinas: Antofagasta, Talca, Chillán, Valdivia\n- Módulos: Angol, Cañete, Arica, Iquique, Calama, Copiapó, La Serena, Illapel, Villa Alemana, Quillota, San Felipe, La Ligua, San Antonio, Rancagua, Linares, Cauquenes, Curicó, Los Ángeles, La Unión, Puerto Montt, Osorno, Chiloé, Futaleufú, Coyhaique\n\nOFICINA VIRTUAL: 28 días hábiles, enviada a oficina seleccionada por el estudiante.",
+      "keywords": "entrega, plazo, in situ, 7 días, 28 días, oficina virtual, retiro",
+      "source": "Preguntas frecuentes — Plazos de entrega",
+      "derivar": "",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q031",
+      "category": "entrega",
+      "tag": "alerta",
+      "question": "¿Quién puede retirar la TNE? (terceros, padres, hermanos)",
+      "answer": "Toda documentación debe ser ORIGINAL Y VIGENTE.\n\n1. EL ESTUDIANTE: Cédula, pasaporte chileno, licencia de conducir. Menor de edad: certificado de nacimiento impreso.\n\n2. PADRE O MADRE: Su identificación legal vigente + identificación del estudiante.\n\n3. HERMANO/HERMANA MAYOR DE EDAD: Mayor de edad + ambos apellidos iguales al estudiante + su identificación + identificación del estudiante.\n\n4. ESPOSO/ESPOSA: Su identificación + identificación del estudiante + certificado de matrimonio (Registro Civil) o libreta de matrimonio.\n\n5. TERCERO AUTORIZADO: Poder notarial original + su identificación + identificación del estudiante.\n\n⚠️ Para toda entrega, el estudiante debe presentar cédula de identidad vigente.",
+      "keywords": "retiro, quién retira, padre, madre, hermano, esposo, tercero, poder notarial",
+      "source": "Preguntas frecuentes — Quién puede retirar",
+      "derivar": "",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q040",
+      "category": "nueva",
+      "tag": "",
+      "question": "¿Quiénes deben tomarse la fotografía para TNE nueva?",
+      "answer": "Deben tomarse la fotografía todos los estudiantes que:\n- Pasan a 5° básico\n- Pasan a 1° medio\n- Pasan a primer año de educación superior\n- Nunca han tenido una TNE correspondiente al nivel que están solicitando\n\nEl estudiante debe presentarse SOLO con su identificación.\n\nLugares disponibles para captura:\n- Puntos masivos\n- Oficinas TNE\n- Establecimientos educacionales habilitados\n- Plataforma web TNE (capturador online JUNAEB)",
+      "keywords": "fotografía, foto, captura, 5° básico, 1° medio, superior, nueva",
+      "source": "Preguntas frecuentes — Fotografía TNE",
+      "derivar": "Módulo de captura fotográfica",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q041",
+      "category": "nueva",
+      "tag": "advertencia",
+      "question": "¿Qué se necesita para emitir una TNE nueva del nivel?",
+      "answer": "Requisitos OBLIGATORIOS (ambos):\n\n1. CAPTURA DE FOTOGRAFÍA en puntos habilitados.\n2. SOLICITUD DEL ESTABLECIMIENTO vía carga SIGE.\n\n⚠️ Si falta cualquiera de los dos, la TNE NO se emite — aunque el otro paso esté completo. Esto suele generar consultas: si el estudiante reclama que ya se sacó la foto pero no le llega la TNE, lo más probable es que falte la carga SIGE del colegio.",
+      "keywords": "tne nueva, requisitos, SIGE, carga, fotografía, emisión",
+      "source": "Preguntas frecuentes — Solicitud TNE nueva",
+      "derivar": "Establecimiento educacional",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q042",
+      "category": "nueva",
+      "tag": "",
+      "question": "¿Cuánto cuesta la TNE nueva del nivel?",
+      "answer": "BÁSICA Y MEDIA: Proceso GRATUITO.\n\nEDUCACIÓN SUPERIOR: Depende del protocolo interno de cada IES.\n- Mayoría: $2.700\n- Algunas piden formularios internos\n- Otras gestionan internamente según matrícula, sin cobro directo\n\nObligatorio seguir las indicaciones del DAE (Dirección de Asuntos Estudiantiles) de la institución.",
+      "keywords": "costo, precio, gratis, 2700, superior, IES, DAE",
+      "source": "Preguntas frecuentes — Costo TNE nueva",
+      "derivar": "DAE de la institución (si es superior)",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q050",
+      "category": "revalidacion",
+      "tag": "",
+      "question": "¿Quiénes pueden revalidar su TNE?",
+      "answer": "Todos los estudiantes que ya cuentan con tarjeta y que este año continúan en el mismo nivel que el año anterior.\n\nBÁSICA Y MEDIA:\n- Colegios municipales/subvencionados: Revalidación GRATUITA.\n- Colegios particulares: Consultar procedimiento específico al establecimiento.\n\nEDUCACIÓN SUPERIOR:\n- Algunas IES cobran $1.100 (pagar en cuenta indicada por la institución).\n- Otras gestionan formularios o lo hacen internamente y gratis, según matrícula.",
+      "keywords": "revalidación, quién revalida, costo, 1100, mismo nivel",
+      "source": "Preguntas frecuentes — Revalidación",
+      "derivar": "",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q051",
+      "category": "revalidacion",
+      "tag": "",
+      "question": "¿Cómo se revalida la TNE (pegado de sello vs tecnológica)?",
+      "answer": "REGIÓN METROPOLITANA (Urbano) — REVALIDACIÓN TECNOLÓGICA:\nInsertar la TNE en un Tótem Bip! y mantenerla dentro hasta que aparezca el mensaje \"Pase extendido\". Eso confirma la revalidación exitosa.\n\nREGIONES / TRANSPORTE INTERURBANO — REVALIDACIÓN CON SELLO:\nAcudir a oficinas TNE o puntos habilitados para el pegado del sello físico correspondiente al año en curso (sello holográfico).",
+      "keywords": "sello, tótem bip, pase extendido, tecnológica, holográfico",
+      "source": "Preguntas frecuentes — Procedimiento revalidación",
+      "derivar": "Módulo de revalidación (regiones)",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q060",
+      "category": "postgrado",
+      "tag": "advertencia",
+      "question": "¿Qué estudiantes de postgrado pueden obtener TNE?",
+      "answer": "Estudiantes de Magíster y Doctorado pueden acceder a la TNE siempre que:\n- Sean alumnos regulares\n- Acrediten su situación socioeconómica\n\nDocumento adicional: Carta de Desmedro Socioeconómico emitida por la Institución, con firma y timbre original. Si es digital, debe tener código de verificación validable en el link de la institución de Educación Superior.\n\n⚠️ Si el código no puede validarse, NO se puede realizar el trámite.",
+      "keywords": "postgrado, magíster, doctorado, desmedro socioeconómico, carta",
+      "source": "Preguntas frecuentes — Postgrado",
+      "derivar": "Módulo de reposición",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q070",
+      "category": "saldo",
+      "tag": "",
+      "question": "¿Puedo bloquear mi TNE extraviada o robada?",
+      "answer": "Sí. Para bloquear la TNE el usuario debe:\n- Asistir presencialmente a una oficina TNE (direcciones en TNE.cl)\n- Presentar su identificación\n\nLa tarjeta queda bloqueada dentro de 48 horas.\n\nSi se realiza una reposición por robo o extravío, el bloqueo también se efectúa automáticamente en 48 horas.",
+      "keywords": "bloqueo, extravío, robo, 48 horas",
+      "source": "Preguntas frecuentes — Bloqueo TNE",
+      "derivar": "Módulo de orientación",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q071",
+      "category": "saldo",
+      "tag": "ok",
+      "question": "Si mi TNE tenía saldo, ¿se pierde al reponerla?",
+      "answer": "NO. El saldo NO se pierde.\n\nEl monto asociado a la TNE anterior se traspasa automáticamente a la nueva tarjeta en un plazo máximo de 3 meses, mediante carga remota.\n\nSegún el sistema regional:\n- Bip! (Santiago): El usuario debe activar el saldo en un tótem Bip!\n- Bipay (Temuco, Chillán, Rancagua): La carga se realiza de forma automática.",
+      "keywords": "saldo, no se pierde, traspaso, bip, bipay, 3 meses",
+      "source": "Preguntas frecuentes — Saldo tras reposición",
+      "derivar": "",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q072",
+      "category": "saldo",
+      "tag": "advertencia",
+      "question": "¿Dónde derivo si la TNE se bloquea o tiene problemas de chip?",
+      "answer": "VALIDADORES MUESTRAN \"Acérquese a atención a clientes\" o no se puede cargar saldo en Metro/Centros Bip!:\n→ Derivar a oficina TARJETABIP! (NO es trámite TNE).\n\nTNE PERDIDA O CON DAÑO FÍSICO:\n→ Trámite de REPOSICIÓN en oficina TNE.\nRecordar: CAR impreso + cédula. Menor de edad acompañado: ambos llevan CI.\n\nCOBRO DE TARIFA COMPLETA (Santiago):\n→ Si TNE habilitada: 600 730 0073 (Bip!) o oficina servicio al cliente Metro.\n→ Si TNE NO habilitada: oficina TNE.\n\nCOBRO TARIFA COMPLETA (regiones / interurbano):\n→ SEREMI de Transporte (recorrido, fecha, hora) o oirs@mtt.cl o subtrans.gob.cl/programa/transportescucha/",
+      "keywords": "chip, bloqueo, validador, tarifa, bip, metro, mtt, seremi",
+      "source": "Preguntas frecuentes — Problemas chip y tarifa",
+      "derivar": "Bip! / Metro / SEREMI Transporte según caso",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q073",
+      "category": "saldo",
+      "tag": "",
+      "question": "Realicé un pago a la cuenta de JUNAEB por error, ¿puedo pedir devolución?",
+      "answer": "Sí. El usuario debe presentarse en oficina TNE con:\n- Voucher original del pago\n- Cartola bancaria\n- Cédula de identidad vigente\n\nDerivar al módulo correspondiente para gestionar la devolución.",
+      "keywords": "devolución, pago, error, voucher, cartola",
+      "source": "Preguntas frecuentes — Devolución pago",
+      "derivar": "Módulo de atención",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q080",
+      "category": "horarios",
+      "tag": "",
+      "question": "¿Cuál es el horario de atención de público en oficinas TNE?",
+      "answer": "Lunes a jueves: 09:30 a 18:00 horas\nViernes: 09:30 a 17:00 horas\n\nEl horario interno de funcionamiento es más amplio, pero la atención de público se ciñe a estos horarios.",
+      "keywords": "horario, atención, apertura, cierre",
+      "source": "Manual filtros de fila — Horario y continuidad",
+      "derivar": "",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q081",
+      "category": "horarios",
+      "tag": "alerta",
+      "question": "¿Qué pasa con usuarios que llegaron antes del cierre?",
+      "answer": "REGLA: Toda persona que haya obtenido número de atención o se encuentre esperando ANTES DEL CIERRE debe ser atendida.\n\nEl filtro de fila debe:\n- Mantener control del ingreso\n- Distinguir entre quienes llegan dentro de horario y quienes se presentan después\n- Confirmar al cierre que los usuarios con número o en espera permanecen en proceso\n\n⚠️ NO se puede cortar atención a quienes ya están dentro del flujo.",
+      "keywords": "cierre, antes del cierre, último, número, espera",
+      "source": "Manual filtros de fila — Horario y continuidad",
+      "derivar": "",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q090",
+      "category": "preferente",
+      "tag": "",
+      "question": "¿Qué hacer ante usuarios con necesidades especiales o atención preferente?",
+      "answer": "El filtro de fila debe:\n- Detectar usuarios con necesidades especiales de orientación o atención preferente.\n- Comunicar oportunamente a la jefatura o al equipo de atención.\n- Favorecer atención inclusiva: los módulos cuentan con medios de comunicación para usuarios en lengua de señas y en creole.\n- Resguardar el orden del gestor de filas, salvo instrucciones internas o criterios de atención preferente definidos por la operación.\n\nGrupos de atención preferente típicos: personas mayores, embarazadas, personas con discapacidad, personas con niños/as en brazos.",
+      "keywords": "preferente, prioridad, discapacidad, embarazada, mayor, señas, creole, inclusión",
+      "source": "Manual filtros de fila — Buenas prácticas / Perfil",
+      "derivar": "Jefatura / módulos habilitados",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q091",
+      "category": "preferente",
+      "tag": "alerta",
+      "question": "¿Cómo resguardar la confidencialidad de datos de menores y estudiantes?",
+      "answer": "PRINCIPIOS:\n- Actuar con resguardo de la confidencialidad de los datos personales.\n- Especial cuidado cuando la atención involucre niños, niñas y adolescentes.\n- NO exponer datos personales del estudiante frente a terceros.\n\nPRÁCTICA EN FILA:\n- Hablar en tono bajo al consultar RUN o datos sensibles.\n- No leer datos en voz alta frente a otros usuarios.\n- Si se requiere validar identidad, hacerlo de forma discreta.\n- Si un tercero pregunta por el trámite de otro estudiante, validar primero la autorización (ver categoría Retiro).",
+      "keywords": "confidencialidad, datos, menor, niño, niña, adolescente, privacidad",
+      "source": "Manual filtros de fila — Perfil del cargo / Conductas a evitar",
+      "derivar": "",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q100",
+      "category": "conducta",
+      "tag": "ok",
+      "question": "¿Cuáles son las buenas prácticas del filtro de fila?",
+      "answer": "1. Trato respetuoso, claro y uniforme con todos los usuarios.\n2. Lenguaje simple, especialmente con estudiantes y apoderados.\n3. Verificar el trámite ANTES de derivar.\n4. Evitar instrucciones ambiguas o contradictorias.\n5. Apoyar especialmente a quienes tienen dificultades para usar el gestor de filas.\n6. Comunicación permanente con jefatura y módulos.\n7. Favorecer atención inclusiva (señas, creole).",
+      "keywords": "buenas prácticas, conducta, trato, respeto, lenguaje",
+      "source": "Manual filtros de fila — Buenas prácticas",
+      "derivar": "",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q101",
+      "category": "conducta",
+      "tag": "alerta",
+      "question": "¿Qué conductas debo evitar?",
+      "answer": "PROHIBIDO:\n- Derivar usuarios SIN consultar previamente el motivo de su visita.\n- Entregar información NO confirmada o distinta a los procedimientos vigentes.\n- Discutir con usuarios o responder de forma descortés.\n- Permitir desorden en la formación de filas cuando sea posible intervenir.\n- Exponer datos personales del estudiante frente a terceros.\n- Abandonar el puesto SIN coordinación con la jefatura.",
+      "keywords": "evitar, prohibido, conductas, mal trato, abandono",
+      "source": "Manual filtros de fila — Conductas a evitar",
+      "derivar": "",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q110",
+      "category": "sistemas",
+      "tag": "",
+      "question": "¿Cómo funciona el gestor de filas y qué hago si falla?",
+      "answer": "EL GESTOR DE FILAS INCLUYE:\n- Tótem dispensador de turnos con pantalla\n- Ingreso del RUN del usuario\n- Elección del trámite\n- Impresora para voucher\n- Pantalla de llamada\n- Software de llamados y administración\n\nMI ROL COMO FILTRO:\n- Conocer su funcionamiento básico\n- Asistir a usuarios en obtener turno y seleccionar correctamente el trámite\n\nSI EL SISTEMA FALLA:\n- Informar inmediatamente a jefatura.\n- El uso de ticketera manual solo se aplica de forma EXCEPCIONAL como contingencia.\n- No improvisar — esperar instrucciones de jefatura.",
+      "keywords": "gestor, tótem, ticket, falla, contingencia, ticketera manual, voucher",
+      "source": "Manual filtros de fila — Uso del gestor de filas",
+      "derivar": "Jefatura (si falla el sistema)",
+      "updated": "2025-05-12"
+    },
+    {
+      "id": "q111",
+      "category": "sistemas",
+      "tag": "",
+      "question": "¿Cuándo se usa la TNE y dónde es válida?",
+      "answer": "Validez: La TNE es válida las 24 horas del día, los 7 días de la semana, durante TODO EL AÑO (incluyendo vacaciones), y en TODO el territorio nacional.\n\nNo hay restricción de horario ni de calendario académico para su uso en transporte.",
+      "keywords": "validez, uso, horario, vacaciones, año, territorio",
+      "source": "Preguntas frecuentes — Validez TNE",
+      "derivar": "",
+      "updated": "2025-05-12"
+    }
+  ]
+};
+var currentCategory = "all";
+var currentSearch = "";
+function escapeHtml(str){if(str===null||str===undefined)return"";return String(str).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");}
+function tagLabel(t){if(t==="alerta")return"Cuidado";if(t==="advertencia")return"Advertencia";if(t==="ok")return"Simple";return t;}
+function highlight(text,q){var safe=escapeHtml(text);if(!q)return safe;var escaped=q.replace(/[.*+?^${}()|[]\]/g,"\$&");return safe.replace(new RegExp("("+escaped+")","gi"),'<span class="highlight">$1</span>');}
+function renderCategories(){var list=document.getElementById("categoryList");var counts={};__DATA__.items.forEach(function(it){counts[it.category]=(counts[it.category]||0)+1;});var html='<div class="cat-item '+(currentCategory==="all"?"active":"")+'" data-cat="all"><span>Todas</span><span class="cat-count">'+__DATA__.items.length+'</span></div>';__DATA__.categories.forEach(function(cat){var count=counts[cat.id]||0;html+='<div class="cat-item '+(currentCategory===cat.id?"active":"")+'" data-cat="'+cat.id+'"><span>'+escapeHtml(cat.name)+'</span><span class="cat-count">'+count+'</span></div>';});list.innerHTML=html;list.querySelectorAll(".cat-item").forEach(function(el){el.addEventListener("click",function(){selectCategory(el.getAttribute("data-cat"));});});}
+function selectCategory(catId){currentCategory=catId;renderCategories();render();window.scrollTo({top:0,behavior:"smooth"});}
+function filterItems(){var items=__DATA__.items;if(currentCategory!=="all")items=items.filter(function(it){return it.category===currentCategory;});if(currentSearch){var q=currentSearch.toLowerCase();items=items.filter(function(it){var haystack=[it.question,it.answer,it.keywords||"",it.source||"",it.derivar||""].join(" ").toLowerCase();return haystack.indexOf(q)>=0;});}return items;}
+function render(){renderCategories();var items=filterItems();var area=document.getElementById("contentArea");document.getElementById("statTotal").textContent=__DATA__.items.length;document.getElementById("statCategorias").textContent=__DATA__.categories.length;document.getElementById("statVisibles").textContent=items.length;var titleEl=document.getElementById("sectionTitle");var descEl=document.getElementById("sectionDesc");if(currentCategory==="all"){titleEl.textContent=currentSearch?'Resultados: "'+currentSearch+'"':"Todas las preguntas";descEl.textContent=currentSearch?items.length+" resultado(s) encontrado(s).":"Selecciona una categoría a la izquierda o busca por palabra clave.";}else{var cat=__DATA__.categories.find(function(c){return c.id===currentCategory;});titleEl.textContent=cat?cat.name:"Categoría";descEl.textContent=items.length+" pregunta(s) en esta categoría.";}if(items.length===0){area.innerHTML='<div class="empty"><h3>Sin resultados</h3><p>No hay preguntas que coincidan con tu búsqueda o categoría.</p></div>';return;}area.innerHTML=items.map(renderQACard).join("");area.querySelectorAll(".qa-question").forEach(function(el){el.addEventListener("click",function(){el.parentElement.classList.toggle("open");});});}
+function renderQACard(item){var cat=__DATA__.categories.find(function(c){return c.id===item.category;});var catName=cat?cat.name:item.category;var tagHtml=item.tag?'<span class="qa-tag '+item.tag+'">'+tagLabel(item.tag)+'</span>':"";var question=highlight(item.question,currentSearch);var answer=highlight(item.answer,currentSearch);var meta="";if(item.derivar||item.source||item.updated){var parts=[];if(item.derivar)parts.push('<span><strong>Derivar a:</strong> '+escapeHtml(item.derivar)+'</span>');if(item.source)parts.push('<span><strong>Fuente:</strong> '+escapeHtml(item.source)+'</span>');parts.push('<span><strong>Categoría:</strong> '+escapeHtml(catName)+'</span>');if(item.updated)parts.push('<span><strong>Actualizado:</strong> '+escapeHtml(item.updated)+'</span>');meta='<div class="qa-meta">'+parts.join("")+'</div>';}return '<div class="qa-card" data-id="'+item.id+'"><div class="qa-question"><div class="qa-question-text">'+tagHtml+'<span>'+question+'</span></div><span class="qa-chevron">▼</span></div><div class="qa-answer">'+answer+meta+'</div></div>';}
+function expandAll(){document.querySelectorAll(".qa-card").forEach(function(c){c.classList.add("open");});}
+function collapseAll(){document.querySelectorAll(".qa-card").forEach(function(c){c.classList.remove("open");});}
+document.getElementById("searchInput").addEventListener("input",function(e){currentSearch=e.target.value.trim();render();});
+document.getElementById("btnExpand").addEventListener("click",expandAll);
+document.getElementById("btnCollapse").addEventListener("click",collapseAll);
+document.getElementById("btnPrint").addEventListener("click",function(){window.print();});
+render();
+</script>
+</body></html>
