@@ -1,0 +1,1270 @@
+<!--
+  Catálogo de Respuestas — Revisor Oficina Virtual TNE
+  Ubix Tecnología Limitada — Contrato JUNAEB ID 85-52-LR24
+  Versión: 1.1
+  Fecha de emisión: Abril 2026
+  Generado: 2026-05-12
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catalogo de Respuestas Revisor - SIN ACENTOS - Ubix</title>
+<style>
+:root {
+  --azul-primario: #013972;
+  --azul-oscuro: #0E1F4B;
+  --azul-celeste: #58BEFC;
+  --azul-celeste-soft: #E5F4FE;
+  --gris-texto: #1F2937;
+  --gris-medio: #6B7280;
+  --gris-claro: #F3F4F6;
+  --gris-borde: #E5E7EB;
+  --blanco: #FFFFFF;
+  --rojo-alerta: #DC2626;
+  --verde-ok: #059669;
+  --amarillo: #FCD34D;
+  --sombra-sm: 0 1px 2px rgba(1,57,114,0.04);
+  --sombra-md: 0 4px 12px rgba(1,57,114,0.08);
+  --sombra-lg: 0 12px 32px rgba(1,57,114,0.12);
+  --radius: 8px;
+  --radius-sm: 4px;
+  --transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--gris-texto);
+  background: var(--gris-claro);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.codigo-mono {
+  font-family: "SF Mono", Menlo, Consolas, "Courier New", monospace;
+  font-feature-settings: "tnum";
+}
+
+/* ============ HEADER ============ */
+header {
+  background: var(--azul-oscuro);
+  color: var(--blanco);
+  padding: 24px 32px 20px;
+  border-bottom: 4px solid var(--azul-celeste);
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  max-width: 1600px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.brand-logo {
+  width: 44px; height: 44px;
+  background: var(--azul-celeste);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: var(--azul-primario);
+  font-size: 20px;
+  letter-spacing: -0.5px;
+}
+.brand-text { line-height: 1.2; }
+.brand-name {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--azul-celeste);
+}
+.brand-sub {
+  font-size: 11px;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  margin-top: 12px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.subtitle {
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+  margin-top: 4px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contract-info {
+  display: flex;
+  gap: 18px;
+  font-size: 11px;
+  color: rgba(255,255,255,0.7);
+  flex-wrap: wrap;
+  align-items: center;
+}
+.contract-info span strong {
+  color: var(--blanco);
+  font-weight: 600;
+}
+
+/* ============ AVISO ============ */
+.aviso {
+  background: linear-gradient(180deg, #fff7ed 0%, #ffedd5 100%);
+  border-left: 4px solid #ea580c;
+  padding: 12px 18px;
+  margin: 0;
+  font-size: 12.5px;
+  color: #7c2d12;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.aviso strong { color: #7c2d12; }
+.aviso-icon {
+  flex-shrink: 0;
+  width: 18px; height: 18px;
+  margin-top: 1px;
+}
+
+/* ============ TOOLBAR ============ */
+.toolbar {
+  background: var(--blanco);
+  padding: 16px 32px;
+  border-bottom: 1px solid var(--gris-borde);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: var(--sombra-sm);
+}
+.toolbar-inner {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.toolbar-row {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.search-wrap {
+  flex: 1;
+  min-width: 280px;
+  position: relative;
+}
+.search-input {
+  width: 100%;
+  padding: 11px 14px 11px 42px;
+  border: 1.5px solid var(--gris-borde);
+  border-radius: var(--radius);
+  font-size: 14px;
+  background: var(--blanco);
+  transition: var(--transition);
+  font-family: inherit;
+}
+.search-input:focus {
+  outline: none;
+  border-color: var(--azul-primario);
+  box-shadow: 0 0 0 3px rgba(1,57,114,0.1);
+}
+.search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px; height: 18px;
+  color: var(--gris-medio);
+  pointer-events: none;
+}
+
+.btn-modo {
+  padding: 10px 18px;
+  border: 1.5px solid var(--azul-primario);
+  background: var(--blanco);
+  color: var(--azul-primario);
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  font-family: inherit;
+}
+.btn-modo:hover { background: var(--gris-claro); }
+.btn-modo.activo {
+  background: var(--azul-primario);
+  color: var(--blanco);
+}
+
+.chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.chip {
+  padding: 6px 14px;
+  background: var(--gris-claro);
+  color: var(--gris-texto);
+  border: 1.5px solid transparent;
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: inherit;
+}
+.chip:hover { background: var(--azul-celeste-soft); }
+.chip.activo {
+  background: var(--azul-primario);
+  color: var(--blanco);
+  border-color: var(--azul-primario);
+}
+.chip-count {
+  background: rgba(0,0,0,0.08);
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.chip.activo .chip-count {
+  background: rgba(255,255,255,0.25);
+}
+
+/* Toggle de modo de copiado */
+.modo-copiado {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 12px;
+  background: var(--azul-celeste-soft);
+  border: 1.5px solid var(--azul-celeste);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--azul-primario);
+  white-space: nowrap;
+}
+.modo-copiado-label {
+  font-size: 11px;
+  color: var(--gris-medio);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+.modo-copiado-toggle {
+  display: inline-flex;
+  background: var(--blanco);
+  border-radius: 999px;
+  padding: 2px;
+  gap: 2px;
+}
+.modo-btn {
+  padding: 4px 12px;
+  background: transparent;
+  color: var(--gris-medio);
+  border: none;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 150ms;
+  font-family: inherit;
+}
+.modo-btn.activo {
+  background: var(--azul-primario);
+  color: var(--blanco);
+}
+.modo-info-icon {
+  width: 14px;
+  height: 14px;
+  cursor: help;
+  color: var(--azul-primario);
+  opacity: 0.7;
+}
+.modo-info-icon:hover { opacity: 1; }
+
+/* ============ MAIN ============ */
+main {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 24px 32px 200px;
+}
+.results-info {
+  font-size: 12px;
+  color: var(--gris-medio);
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 14px;
+}
+
+/* ============ CARDS ============ */
+.card {
+  background: var(--blanco);
+  border: 1.5px solid var(--gris-borde);
+  border-radius: var(--radius);
+  padding: 16px 16px 14px;
+  transition: var(--transition);
+  position: relative;
+  cursor: default;
+}
+.card:hover {
+  border-color: var(--azul-celeste);
+  box-shadow: var(--sombra-md);
+}
+.card.seleccionada {
+  border-color: var(--azul-primario);
+  border-left-width: 5px;
+  background: var(--azul-celeste-soft);
+}
+.card.seleccionada::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 22px;
+  height: 22px;
+  background: var(--azul-primario);
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>");
+  background-size: 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.card-codigo {
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background: var(--azul-primario);
+  color: var(--blanco);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+}
+.card-categoria {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gris-medio);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.card-causal {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--azul-oscuro);
+  margin-bottom: 8px;
+  line-height: 1.35;
+}
+.card-texto {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--gris-texto);
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  background: var(--gris-claro);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--azul-celeste);
+}
+.card-foot {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-fundamento {
+  font-size: 10.5px;
+  color: var(--gris-medio);
+  font-style: italic;
+  flex: 1;
+}
+.card-charcount {
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: var(--gris-claro);
+  color: var(--gris-medio);
+  white-space: nowrap;
+}
+.card-charcount.ok { background: #DCFCE7; color: #166534; }
+.card-charcount.warn { background: #FEF3C7; color: #92400E; }
+.card-charcount.over { background: #FEE2E2; color: #991B1B; }
+.btn-copiar {
+  padding: 6px 12px;
+  background: var(--azul-primario);
+  color: var(--blanco);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: inherit;
+  white-space: nowrap;
+}
+.btn-copiar:hover { background: var(--azul-oscuro); }
+.btn-copiar.copiado { background: var(--verde-ok); }
+
+.btn-toggle-sel {
+  padding: 6px 12px;
+  background: var(--blanco);
+  color: var(--azul-primario);
+  border: 1.5px solid var(--azul-primario);
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: inherit;
+}
+.btn-toggle-sel:hover { background: var(--azul-celeste-soft); }
+.card.seleccionada .btn-toggle-sel {
+  background: var(--azul-primario);
+  color: var(--blanco);
+}
+
+/* ============ CONSTRUCTOR ============ */
+.constructor {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--blanco);
+  border-top: 3px solid var(--azul-primario);
+  box-shadow: 0 -8px 32px rgba(1,57,114,0.16);
+  transform: translateY(100%);
+  transition: transform 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
+  max-height: 60vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.constructor.visible { transform: translateY(0); }
+
+.constructor-header {
+  padding: 14px 32px;
+  background: var(--azul-primario);
+  color: var(--blanco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.constructor-titulo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.constructor-count {
+  background: var(--azul-celeste);
+  color: var(--azul-primario);
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.constructor-mode-toggle {
+  display: inline-flex;
+  background: rgba(255,255,255,0.12);
+  border-radius: 6px;
+  padding: 3px;
+  gap: 2px;
+}
+.mode-btn {
+  padding: 5px 12px;
+  background: transparent;
+  color: rgba(255,255,255,0.75);
+  border: none;
+  border-radius: 4px;
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: inherit;
+}
+.mode-btn:hover { color: var(--blanco); }
+.mode-btn.activo {
+  background: var(--blanco);
+  color: var(--azul-primario);
+}
+
+.charbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 32px;
+  background: var(--gris-claro);
+  border-bottom: 1px solid var(--gris-borde);
+  font-size: 12px;
+}
+.charbar-label {
+  font-weight: 600;
+  color: var(--gris-texto);
+}
+.charbar-progress {
+  flex: 1;
+  height: 8px;
+  background: var(--blanco);
+  border: 1px solid var(--gris-borde);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.charbar-fill {
+  height: 100%;
+  width: 0;
+  background: var(--verde-ok);
+  transition: width 200ms cubic-bezier(0.4, 0, 0.2, 1), background 200ms;
+}
+.charbar-fill.warn { background: #F59E0B; }
+.charbar-fill.over { background: var(--rojo-alerta); }
+.charbar-num {
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-weight: 700;
+  font-size: 13px;
+  min-width: 90px;
+  text-align: right;
+}
+.charbar-num.ok { color: var(--verde-ok); }
+.charbar-num.warn { color: #B45309; }
+.charbar-num.over { color: var(--rojo-alerta); }
+.charbar-warning {
+  background: #FEE2E2;
+  color: #991B1B;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 11.5px;
+  font-weight: 600;
+  display: none;
+}
+.charbar-warning.visible { display: inline-block; }
+.constructor-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.btn-constructor {
+  padding: 8px 16px;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn-primario {
+  background: var(--azul-celeste);
+  color: var(--azul-primario);
+}
+.btn-primario:hover { background: var(--blanco); }
+.btn-primario.copiado { background: var(--verde-ok); color: var(--blanco); }
+.btn-secundario {
+  background: transparent;
+  color: var(--blanco);
+  border: 1px solid rgba(255,255,255,0.4);
+}
+.btn-secundario:hover { background: rgba(255,255,255,0.1); }
+.btn-cerrar {
+  background: transparent;
+  color: var(--blanco);
+  border: none;
+  width: 32px; height: 32px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn-cerrar:hover { background: rgba(255,255,255,0.15); }
+
+.constructor-body {
+  padding: 18px 32px;
+  overflow-y: auto;
+  flex: 1;
+}
+.constructor-empty {
+  text-align: center;
+  padding: 32px 16px;
+  color: var(--gris-medio);
+  font-size: 13px;
+}
+.preview {
+  background: var(--gris-claro);
+  border: 1px dashed var(--gris-borde);
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--gris-texto);
+  white-space: pre-wrap;
+  font-family: Georgia, "Times New Roman", serif;
+  max-height: 32vh;
+  overflow-y: auto;
+}
+.preview-tag {
+  display: inline-block;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 11px;
+  font-weight: 700;
+  background: var(--azul-primario);
+  color: var(--blanco);
+  padding: 1px 7px;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
+/* ============ TOAST ============ */
+.toast {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%) translateY(80px);
+  background: var(--azul-oscuro);
+  color: var(--blanco);
+  padding: 12px 22px;
+  border-radius: var(--radius);
+  box-shadow: var(--sombra-lg);
+  font-size: 13px;
+  font-weight: 500;
+  z-index: 200;
+  opacity: 0;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.toast.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+.toast-icon {
+  width: 18px; height: 18px;
+  background: var(--verde-ok);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ============ EMPTY STATE ============ */
+.empty {
+  text-align: center;
+  padding: 64px 16px;
+  color: var(--gris-medio);
+}
+.empty-icon {
+  width: 48px; height: 48px;
+  margin: 0 auto 12px;
+  opacity: 0.4;
+}
+.empty-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--gris-texto);
+  margin-bottom: 6px;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+  header { padding: 16px 18px; }
+  .toolbar { padding: 12px 18px; }
+  main { padding: 16px 18px 220px; }
+  .constructor-header, .constructor-body { padding-left: 18px; padding-right: 18px; }
+  h1 { font-size: 18px; }
+  .grid { grid-template-columns: 1fr; }
+}
+
+/* Print mode */
+@media print {
+  .toolbar, .constructor, .toast, .btn-copiar, .btn-toggle-sel { display: none !important; }
+  .card { break-inside: avoid; box-shadow: none; border: 1px solid #ccc; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="brand">
+      <div class="brand-logo">U</div>
+      <div class="brand-text">
+        <div class="brand-name">Ubix Tecnología</div>
+        <div class="brand-sub">Sociedad de Profesionales — RUT 76.358.638-3</div>
+      </div>
+    </div>
+    <div class="contract-info">
+      <span><strong>Contrato:</strong> ID 85-52-LR24</span>
+      <span><strong>Mandante:</strong> JUNAEB</span>
+      <span><strong>Proceso:</strong> Oficina Virtual TNE</span>
+      <span><strong>Versión catálogo:</strong> 1.1</span>
+    </div>
+  </div>
+  <h1>Catálogo Táctico de Respuestas — Revisor</h1>
+  <div class="subtitle">Aplicativo de validacion de expedientes - Subtitulo N 3.5.1.2 - <strong style="color: var(--azul-celeste)">Edicion SIN ACENTOS (max. 500 chars) - compatibilidad maxima con aplicativo JUNAEB</strong></div>
+</header>
+
+<div class="aviso">
+  <svg class="aviso-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+  </svg>
+  <div>
+    <strong>Política de uso de credenciales (Cap. V del Manual).</strong> Las credenciales son personales, intransferibles y trazables. Toda decisión registrada con tu credencial se atribuye exclusivamente a ti, con independencia de quién esté frente al equipo. No compartas tu sesión, cierra al ausentarte y no extraigas información del expediente fuera del aplicativo. <strong>Solo puedes seleccionar códigos del catálogo: queda prohibido modificar o complementar los textos normalizados.</strong>
+  </div>
+</div>
+
+<div class="toolbar">
+  <div class="toolbar-inner">
+    <div class="toolbar-row">
+      <div class="search-wrap">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="text" id="search" class="search-input" placeholder="Buscar por código, causal o texto (ej: 'fotografía', 'A-01', 'WebPay')..." autocomplete="off">
+      </div>
+      <button id="btn-modo" class="btn-modo">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+        </svg>
+        <span id="btn-modo-label">Activar respuesta consolidada</span>
+      </button>
+    </div>
+    <div class="chips" id="chips"></div>
+  </div>
+</div>
+
+<main>
+  <div class="results-info">
+    <span id="results-count">Mostrando todos los códigos</span>
+    <span style="color: var(--gris-medio); font-size: 11px;">
+      Hacé clic en <strong>Copiar respuesta</strong> para llevar el texto al portapapeles.
+    </span>
+  </div>
+  <div class="grid" id="grid"></div>
+  <div id="empty-state" class="empty" style="display:none">
+    <svg class="empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+    </svg>
+    <div class="empty-title">No se encontraron códigos</div>
+    <div>Probá con otros términos de búsqueda o limpiá los filtros.</div>
+  </div>
+</main>
+
+<!-- CONSTRUCTOR DE RESPUESTA CONSOLIDADA -->
+<div class="constructor" id="constructor">
+  <div class="constructor-header">
+    <div class="constructor-titulo">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+      </svg>
+      Respuesta consolidada
+      <span class="constructor-count" id="constructor-count">0</span>
+    </div>
+    <div class="constructor-mode-toggle">
+      <button class="mode-btn activo" data-mode="completo" title="Incluye encabezado y cierre estándar">Mensaje completo</button>
+      <button class="mode-btn" data-mode="compacto" title="Solo los códigos seleccionados, sin marco — para ahorrar caracteres">Compacto</button>
+    </div>
+    <div class="constructor-actions">
+      <button class="btn-constructor btn-secundario" id="btn-limpiar">Limpiar</button>
+      <button class="btn-constructor btn-primario" id="btn-copiar-todo">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+        </svg>
+        <span id="btn-copiar-todo-label">Copiar respuesta completa</span>
+      </button>
+      <button class="btn-cerrar" id="btn-cerrar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="charbar">
+    <span class="charbar-label">Caracteres:</span>
+    <div class="charbar-progress">
+      <div class="charbar-fill" id="charbar-fill"></div>
+    </div>
+    <span class="charbar-num ok" id="charbar-num">0 / 500</span>
+    <span class="charbar-warning" id="charbar-warning">⚠ Excede 500 chars — seleccione menos códigos o use modo Compacto</span>
+  </div>
+  <div class="constructor-body">
+    <div id="constructor-empty" class="constructor-empty">
+      Seleccioná uno o más códigos para construir la respuesta consolidada al estudiante.<br>
+      <strong>Modo Mensaje completo:</strong> incluye encabezado y cierre estándar (ideal para 1-2 códigos).<br>
+      <strong>Modo Compacto:</strong> solo los códigos seleccionados (ideal para 3+ códigos).
+    </div>
+    <div id="preview" class="preview" style="display:none"></div>
+  </div>
+</div>
+
+<div id="toast" class="toast">
+  <div class="toast-icon">
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"/>
+    </svg>
+  </div>
+  <span id="toast-msg">Texto copiado al portapapeles</span>
+</div>
+
+<script>
+// ============ DATOS DEL CATÁLOGO ============
+// Textos comprimidos para caber en aplicativo con límite de 500 chars
+const CATALOGO = [
+  {cod:"A-01",cat:"Fotografia",causal:"No cumple patron (fondo y encuadre)",texto:"La fotografia no cumple el patron. Debe ser tipo carnet: fondo blanco liso, rostro completo y descubierto, primer plano de cabeza y hombros. Cargue una nueva fotografia que cumpla estas caracteristicas.",fund:"M.O. 2.20.5"},
+  {cod:"A-02",cat:"Fotografia",causal:"Borrosa o sin nitidez",texto:"La fotografia esta borrosa. Cargue una nueva fotografia nitida, sin desenfoque, sombras ni exceso de luz.",fund:"M.O. 2.20.5"},
+  {cod:"A-03",cat:"Fotografia",causal:"Rostro no descubierto / accesorios que impiden identificar",texto:"La fotografia no permite identificar al titular. Cargue una nueva con el rostro completamente visible, sin lentes oscuros, gorros, audifonos ni accesorios que cubran las facciones.",fund:"M.O. 2.20.5"},
+  {cod:"A-04",cat:"Fotografia",causal:"Encuadre incorrecto (rostro no centrado)",texto:"El encuadre no es correcto. Cargue una nueva fotografia en primer plano de cabeza y hombros, con el rostro centrado.",fund:"M.O. 2.20.5"},
+  {cod:"A-05",cat:"Fotografia",causal:"Iluminacion inadecuada / sombras",texto:"La fotografia tiene problemas de iluminacion o sombras. Cargue una nueva con iluminacion uniforme y fondo blanco.",fund:"M.O. 2.20.5"},
+  {cod:"A-06",cat:"Fotografia",causal:"Orientacion incorrecta (no queda vertical)",texto:"La fotografia esta mal orientada: el cuerpo de la imagen debe quedar vertical en el sistema, encuadre tipo cedula. Cargue una nueva respetando la orientacion vertical.",fund:"M.O. 2.20.5"},
+  {cod:"B-01",cat:"Certificado Alumno Regular",causal:"Certificado de Alumno Regular no vigente (Educacion Superior)",texto:"Su Certificado de Alumno Regular no se encuentra vigente, no puede superar los 30 dias.",fund:"M.O. 2.1.3"},
+  {cod:"B-02",cat:"Certificado Alumno Regular",causal:"Falta Certificado",texto:"Falta el Certificado de Alumno Regular. Cargue el certificado del establecimiento o institucion, en original (firma y timbre) o con codigo de validacion online vigente.",fund:"M.O. 2.1.3"},
+  {cod:"B-03",cat:"Certificado Alumno Regular",causal:"Sin firma, timbre o codigo de validacion",texto:"El Certificado de Alumno Regular no tiene firma y timbre originales ni codigo de validacion online. Cargue uno que cumpla alguno de estos requisitos.",fund:"M.O. 2.1.3"},
+  {cod:"B-04",cat:"Certificado Alumno Regular",causal:"Falta Carta de Desmedro (Media/Basica - particulares)",texto:"Por tratarse de un establecimiento particular pagado, ademas del Certificado de Alumno Regular, debe adjuntar la Carta de Certificacion de Regularidad emitida por el establecimiento y la declaracion jurada notarial, con firma y timbre originales.",fund:"M.O. 2.1.3 / Anexo N 1"},
+  {cod:"B-05",cat:"Certificado Alumno Regular",causal:"Falta Carta de Desmedro (Postgrado - Of. N 878)",texto:"Por ser estudiante de postgrado (Magister o Doctorado), ademas del CAR debe adjuntar la Carta de Desmedro Socioeconomico de su institucion (Of. N 878 JUNAEB), con firma y timbre originales o codigo de verificacion valido.",fund:"M.O. 2.1.3 / Of. N 878"},
+  {cod:"B-06",cat:"Certificado Alumno Regular",causal:"Certificado no vigente (Educacion Basica y Media)",texto:"Su Certificado de Alumno Regular no se encuentra vigente, debe ser del ano en curso.",fund:"M.O. 2.1.3"},
+  {cod:"C-01",cat:"Comprobante de Pago",causal:"Falta Comprobante de Pago",texto:"Falta el Comprobante de Pago. Cargue el voucher de $3.600 depositado en la cuenta JUNAEB N 9000097 de Banco Estado, o el comprobante de pago en linea TGR.",fund:"M.O. 2.1.3"},
+  {cod:"C-02",cat:"Comprobante de Pago",causal:"Comprobante ilegible o incompleto",texto:"El Comprobante de Pago no es legible o esta incompleto. Cargue una imagen nitida y completa del voucher o comprobante TGR.",fund:"M.O. 2.1.3"},
+  {cod:"C-03",cat:"Comprobante de Pago",causal:"Folio invalido o ya utilizado",texto:"El folio del comprobante no es valido o ya fue utilizado. Seleccione nuevamente \"Comprobante de deposito\". Si el folio aparece como utilizado, agregue un cero al final (ej. 88585 -> 885850) y reintente.",fund:"Of. Virtual TNE"},
+  {cod:"C-04",cat:"Comprobante de Pago",causal:"Cuenta de destino incorrecta",texto:"El deposito no fue hecho en la cuenta correcta. Pague en la cuenta JUNAEB N 9000097 de Banco Estado (Banco Estado, ServiEstado, Caja Vecina) o por el boton TGR. Regularice y cargue el nuevo comprobante.",fund:"M.O. 2.1.3"},
+  {cod:"C-05",cat:"Comprobante de Pago",causal:"Pago por transferencia electronica (no aceptada)",texto:"No se aceptan transferencias electronicas. Pague en Banco Estado, ServiEstado o Caja Vecina, o por WebPay (Oficina Virtual) o TGR. Pague por una via autorizada y cargue el comprobante.",fund:"M.O. 2.1.3"},
+  {cod:"C-06",cat:"Comprobante de Pago",causal:"Pago TGR rechazado: instruccion de reingreso",texto:"Si pago por TGR y su expediente fue rechazado, en la nueva solicitud seleccione \"Comprobante de deposito\" e ingrese el codigo del expediente rechazado. Puede adjuntar el comprobante recibido por correo (opcional).",fund:"Of. Virtual TNE"},
+  {cod:"C-07",cat:"Comprobante de Pago",causal:"Pago WebPay rechazado: instruccion de reingreso",texto:"Si pago por WebPay y su expediente fue rechazado, en la nueva solicitud seleccione \"Comprobante de deposito\" e ingrese el mismo folio. Si aparece como utilizado, agregue un cero al final y reintente.",fund:"Of. Virtual TNE"},
+  {cod:"C-08",cat:"Comprobante de Pago",causal:"Comprobante del banco, no de Tesoreria",texto:"El comprobante adjunto es del banco, no de Tesoreria. Cargue el comprobante generado por la TGR e ingrese el \"Folio\" del comprobante TGR (no el \"Identificador\" del banco).",fund:"Of. Virtual TNE"},
+  {cod:"D-01",cat:"Cedula de Identidad",causal:"Falta parte frontal",texto:"Falta la parte frontal de la cedula de identidad. Cargue una imagen clara del anverso del documento.",fund:"M.O. 2.1.3"},
+  {cod:"D-02",cat:"Cedula de Identidad",causal:"Cedula vencida",texto:"La cedula de identidad esta vencida. Cargue una vigente. Si esta en proceso de renovacion, puede usar el comprobante del Registro Civil con fotografia.",fund:"M.O. 2.1.3"},
+  {cod:"D-03",cat:"Cedula de Identidad",causal:"Cedula ilegible o de baja calidad",texto:"La imagen de la cedula no es legible. Cargue una imagen nitida y completa donde se distingan todos los datos del documento.",fund:"M.O. 2.1.3"},
+  {cod:"D-04",cat:"Cedula de Identidad",causal:"Documento de identidad no aceptado",texto:"El documento de identidad no es aceptado. Documentos validos: cedula vigente, pasaporte chileno vigente, Identificador Provisorio Escolar (IPE) con pasaporte del pais de origen vigente (extranjeros), o comprobante del Registro Civil con fotografia. Cargue uno de estos.",fund:"M.O. 2.1.3"},
+  {cod:"E-01",cat:"Motivo de Reposicion",causal:"Error en el motivo declarado",texto:"El motivo de reposicion declarado no coincide con la documentacion. Ingrese una nueva solicitud con el motivo correcto (perdida, hurto, robo o deterioro) y la documentacion que lo acredita.",fund:"M.O. 2.2.1"},
+  {cod:"E-02",cat:"Motivo de Reposicion",causal:"Falta TNE deteriorada",texto:"Declaro deterioro como motivo, pero no adjunto la TNE anterior deteriorada. Cargue una imagen clara de la TNE donde sea legible el folio.",fund:"M.O. 2.1.3"},
+  {cod:"E-03",cat:"Motivo de Reposicion",causal:"Falta Constancia de Carabineros (RM)",texto:"Declaro perdida, hurto o robo: debe adjuntar Constancia de Carabineros (obligatoria en Region Metropolitana). Obtengala en comisaria o en comisariavirtual.cl y presentela impresa.",fund:"M.O. 2.1.3"},
+  {cod:"E-04",cat:"Motivo de Reposicion",causal:"Falta Declaracion Jurada (regiones)",texto:"Declaro perdida, hurto o robo: adjunte la Declaracion Jurada Simple por extravio o robo de la TNE (Anexo N 3 JUNAEB), impresa y firmada. Valido para regiones distintas a la Metropolitana.",fund:"M.O. 2.1.3 / Anexo N 3"},
+  {cod:"E-05",cat:"Motivo de Reposicion",causal:"Debe ingresarse por \"Cambio de Institucion\"",texto:"Su CAR registra una institucion distinta a la de su ultima TNE. Ingrese una nueva solicitud con motivo \"Cambio de Institucion\" y los datos correctos de la nueva entidad.",fund:"M.O. 2.2.1.2"},
+  {cod:"F-01",cat:"Datos de la nueva tarjeta",causal:"Error en datos personales o de institucion",texto:"Los datos de la nueva tarjeta no coinciden con la documentacion (RUN, nombre o institucion). Ingrese una nueva solicitud verificando que cada dato coincida con su cedula y su CAR.",fund:"M.O. 2.2.1.2"},
+  {cod:"F-02",cat:"Datos de la nueva tarjeta",causal:"Cambio de institucion no declarado",texto:"La institucion de su ultima TNE no coincide con la del CAR. En la nueva solicitud agregue el motivo \"Cambio de institucion\" e ingrese correctamente los datos de la nueva entidad.",fund:"M.O. 2.2.1.2"},
+  {cod:"G-01",cat:"Condiciones generales",causal:"Multas o inhabilitaciones MTT",texto:"Su solicitud no procede: registra multas o inhabilitaciones pendientes con el MTT por la Ley Antievasion. Regularice con el MTT antes de volver a solicitar la reposicion.",fund:"M.O. 2.1.2 / Ley 21.083"},
+  {cod:"G-02",cat:"Condiciones generales",causal:"Ultima TNE en estado distinto a entregado",texto:"Su ultima TNE registra un estado que no permite la reposicion virtual. Acuda a una oficina de atencion TNE para regularizar su tarjeta.",fund:"M.O. 2.17.1"},
+  {cod:"G-03",cat:"Condiciones generales",causal:"Solicitud previa sin terminar",texto:"Existe una solicitud previa sin finalizar asociada a su RUN. Acuda a una oficina de atencion TNE para completarla o eliminarla antes de ingresar una nueva.",fund:"M.O. 2.17.2"},
+  {cod:"G-04",cat:"Condiciones generales",causal:"Primer pase de nivel: no procede reposicion",texto:"Su solicitud no procede: corresponde a primer pase de nivel (tipicamente Superior). Acuda a una oficina TNE con su cedula vigente para captura fotografica y contacte a su institucion para que lo habilite.",fund:"M.O. 2.20"},
+  {cod:"G-05",cat:"Condiciones generales",causal:"No procede en Of. Virtual: derivar a presencial",texto:"Su solicitud no puede procesarse por Oficina Virtual. Acuda a una oficina presencial de atencion TNE con toda la documentacion requerida. Direcciones disponibles en www.tne.cl.",fund:"M.O. 2.1.3"}
+];
+
+const ENCABEZADO_MULTIPLE = "Estimado/a, su solicitud fue rechazada por las siguientes observaciones:";
+const CIERRE = "Reingrese en www.tne.cl con la documentacion corregida. Plazo de revision: 3 dias habiles.";
+const LIMITE_CHARS = 500;
+
+// ============ NORMALIZACION DE TEXTO PARA COPIADO ============
+// Edicion SIN ACENTOS: el catalogo ya esta en ASCII puro, esta funcion es identidad.
+function normalizarParaCopiado(s) {
+  return s;
+}
+
+// ============ ESTADO ============
+const state = {
+  filtroCategoria: "TODAS",
+  busqueda: "",
+  modoMultiple: false,
+  modoSalida: "completo",   // "completo" | "compacto"
+  seleccionados: new Set()
+};
+
+// ============ ELEMENTOS ============
+const $grid = document.getElementById("grid");
+const $search = document.getElementById("search");
+const $chips = document.getElementById("chips");
+const $resultsCount = document.getElementById("results-count");
+const $emptyState = document.getElementById("empty-state");
+const $btnModo = document.getElementById("btn-modo");
+const $btnModoLabel = document.getElementById("btn-modo-label");
+const $constructor = document.getElementById("constructor");
+const $constructorEmpty = document.getElementById("constructor-empty");
+const $constructorCount = document.getElementById("constructor-count");
+const $preview = document.getElementById("preview");
+const $btnLimpiar = document.getElementById("btn-limpiar");
+const $btnCopiarTodo = document.getElementById("btn-copiar-todo");
+const $btnCopiarTodoLabel = document.getElementById("btn-copiar-todo-label");
+const $btnCerrar = document.getElementById("btn-cerrar");
+const $toast = document.getElementById("toast");
+const $toastMsg = document.getElementById("toast-msg");
+const $charbarFill = document.getElementById("charbar-fill");
+const $charbarNum = document.getElementById("charbar-num");
+const $charbarWarning = document.getElementById("charbar-warning");
+const $modeBtns = document.querySelectorAll(".mode-btn");
+
+// ============ INICIALIZACIÓN ============
+function init() {
+  renderChips();
+  renderGrid();
+  bindEvents();
+}
+
+// ============ CHIPS ============
+function renderChips() {
+  const cats = [...new Set(CATALOGO.map(c => c.cat))];
+  const counts = {};
+  CATALOGO.forEach(c => counts[c.cat] = (counts[c.cat] || 0) + 1);
+
+  let html = `<div class="chip ${state.filtroCategoria === "TODAS" ? "activo" : ""}" data-cat="TODAS">
+    Todos <span class="chip-count">${CATALOGO.length}</span>
+  </div>`;
+  cats.forEach(cat => {
+    html += `<div class="chip ${state.filtroCategoria === cat ? "activo" : ""}" data-cat="${cat}">
+      ${cat} <span class="chip-count">${counts[cat]}</span>
+    </div>`;
+  });
+  $chips.innerHTML = html;
+
+  $chips.querySelectorAll(".chip").forEach(chip => {
+    chip.addEventListener("click", () => {
+      state.filtroCategoria = chip.dataset.cat;
+      renderChips();
+      renderGrid();
+    });
+  });
+}
+
+// ============ FILTRO ============
+function getFiltrados() {
+  const q = state.busqueda.trim().toLowerCase();
+  return CATALOGO.filter(c => {
+    if (state.filtroCategoria !== "TODAS" && c.cat !== state.filtroCategoria) return false;
+    if (q) {
+      const blob = (c.cod + " " + c.cat + " " + c.causal + " " + c.texto).toLowerCase();
+      if (!blob.includes(q)) return false;
+    }
+    return true;
+  });
+}
+
+// ============ GRID ============
+function renderGrid() {
+  const filtrados = getFiltrados();
+  if (filtrados.length === 0) {
+    $grid.innerHTML = "";
+    $emptyState.style.display = "block";
+    $resultsCount.textContent = "Ningún código coincide con los filtros";
+    return;
+  }
+  $emptyState.style.display = "none";
+  $resultsCount.textContent = `Mostrando ${filtrados.length} de ${CATALOGO.length} códigos`;
+
+  $grid.innerHTML = filtrados.map(c => {
+    const sel = state.seleccionados.has(c.cod);
+    const textoFinal = normalizarParaCopiado(c.texto);
+    const len = textoFinal.length;
+    const cls = len <= 200 ? "ok" : (len <= 400 ? "warn" : "over");
+    return `<div class="card ${sel ? "seleccionada" : ""}" data-cod="${c.cod}">
+      <div class="card-head">
+        <span class="card-codigo">${c.cod}</span>
+        <span class="card-categoria">${c.cat}</span>
+        <span class="card-charcount ${cls}" title="Largo del texto que se copiará al portapapeles (modo ${state.modoCopiado})">${len} ch</span>
+      </div>
+      <div class="card-causal">${escapeHtml(c.causal)}</div>
+      <div class="card-texto">${escapeHtml(textoFinal)}</div>
+      <div class="card-foot">
+        <span class="card-fundamento">${escapeHtml(c.fund)}</span>
+        ${state.modoMultiple
+          ? `<button class="btn-toggle-sel" data-cod="${c.cod}">${sel ? "✓ Seleccionado" : "Seleccionar"}</button>`
+          : `<button class="btn-copiar" data-cod="${c.cod}">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+              </svg>
+              Copiar respuesta
+            </button>`
+        }
+      </div>
+    </div>`;
+  }).join("");
+
+  // Bind buttons
+  $grid.querySelectorAll(".btn-copiar").forEach(btn => {
+    btn.addEventListener("click", e => {
+      e.stopPropagation();
+      const cod = btn.dataset.cod;
+      const item = CATALOGO.find(c => c.cod === cod);
+      copiarAlPortapapeles(item.texto, btn, "Texto del " + cod + " copiado");
+    });
+  });
+  $grid.querySelectorAll(".btn-toggle-sel").forEach(btn => {
+    btn.addEventListener("click", e => {
+      e.stopPropagation();
+      toggleSeleccion(btn.dataset.cod);
+    });
+  });
+  $grid.querySelectorAll(".card").forEach(card => {
+    if (state.modoMultiple) {
+      card.style.cursor = "pointer";
+      card.addEventListener("click", () => toggleSeleccion(card.dataset.cod));
+    }
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, m =>
+    ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+}
+
+// ============ SELECCIÓN MÚLTIPLE ============
+function toggleSeleccion(cod) {
+  if (state.seleccionados.has(cod)) state.seleccionados.delete(cod);
+  else state.seleccionados.add(cod);
+  renderGrid();
+  renderConstructor();
+}
+
+function renderConstructor() {
+  const n = state.seleccionados.size;
+  $constructorCount.textContent = n;
+  if (n === 0) {
+    $constructorEmpty.style.display = "block";
+    $preview.style.display = "none";
+    actualizarCharbar(0);
+    return;
+  }
+  $constructorEmpty.style.display = "none";
+  $preview.style.display = "block";
+  $preview.innerHTML = construirPreviewHtml();
+  const txt = normalizarParaCopiado(construirTextoPlano());
+  actualizarCharbar(txt.length);
+}
+
+function actualizarCharbar(n) {
+  const pct = Math.min(100, (n / LIMITE_CHARS) * 100);
+  $charbarFill.style.width = pct + "%";
+  $charbarNum.textContent = n + " / " + LIMITE_CHARS;
+
+  // Estados visuales
+  $charbarFill.classList.remove("warn", "over");
+  $charbarNum.classList.remove("ok", "warn", "over");
+  $charbarWarning.classList.remove("visible");
+
+  if (n > LIMITE_CHARS) {
+    $charbarFill.classList.add("over");
+    $charbarNum.classList.add("over");
+    $charbarWarning.classList.add("visible");
+  } else if (n > LIMITE_CHARS * 0.85) {
+    $charbarFill.classList.add("warn");
+    $charbarNum.classList.add("warn");
+  } else {
+    $charbarNum.classList.add("ok");
+  }
+}
+
+function construirPreviewHtml() {
+  const ordenados = [...state.seleccionados].sort();
+  const items = ordenados.map(cod => CATALOGO.find(c => c.cod === cod));
+  const compacto = state.modoSalida === "compacto";
+
+  let html = "";
+  if (!compacto) {
+    if (items.length > 1) {
+      html += escapeHtml(normalizarParaCopiado(ENCABEZADO_MULTIPLE)) + "\n\n";
+    } else {
+      html += escapeHtml(normalizarParaCopiado("Estimado/a:")) + "\n\n";
+    }
+  }
+  items.forEach((it, i) => {
+    html += `<span class="preview-tag">${it.cod}</span>` + escapeHtml(normalizarParaCopiado(it.texto));
+    html += (i < items.length - 1) ? "\n\n" : "";
+  });
+  if (!compacto) {
+    html += "\n\n" + escapeHtml(normalizarParaCopiado(CIERRE));
+  }
+  return html;
+}
+
+function construirTextoPlano() {
+  const ordenados = [...state.seleccionados].sort();
+  const items = ordenados.map(cod => CATALOGO.find(c => c.cod === cod));
+  const compacto = state.modoSalida === "compacto";
+
+  let txt = "";
+  if (!compacto) {
+    if (items.length > 1) {
+      txt = ENCABEZADO_MULTIPLE + "\n\n";
+    } else {
+      txt = "Estimado/a:\n\n";
+    }
+  }
+  items.forEach((it, i) => {
+    txt += "[" + it.cod + "] " + it.texto;
+    txt += (i < items.length - 1) ? "\n\n" : "";
+  });
+  if (!compacto) {
+    txt += "\n\n" + CIERRE;
+  }
+  return txt;
+}
+
+// ============ EVENTOS ============
+function bindEvents() {
+  $search.addEventListener("input", e => {
+    state.busqueda = e.target.value;
+    renderGrid();
+  });
+
+  $btnModo.addEventListener("click", () => {
+    state.modoMultiple = !state.modoMultiple;
+    $btnModo.classList.toggle("activo", state.modoMultiple);
+    $btnModoLabel.textContent = state.modoMultiple
+      ? "Salir de respuesta consolidada"
+      : "Activar respuesta consolidada";
+    $constructor.classList.toggle("visible", state.modoMultiple);
+    if (!state.modoMultiple) {
+      state.seleccionados.clear();
+    }
+    renderGrid();
+    renderConstructor();
+  });
+
+  $btnLimpiar.addEventListener("click", () => {
+    state.seleccionados.clear();
+    renderGrid();
+    renderConstructor();
+  });
+
+  $modeBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      state.modoSalida = btn.dataset.mode;
+      $modeBtns.forEach(b => b.classList.toggle("activo", b.dataset.mode === state.modoSalida));
+      renderConstructor();
+    });
+  });
+
+
+  $btnCerrar.addEventListener("click", () => {
+    state.modoMultiple = false;
+    state.seleccionados.clear();
+    $btnModo.classList.remove("activo");
+    $btnModoLabel.textContent = "Activar respuesta consolidada";
+    $constructor.classList.remove("visible");
+    renderGrid();
+    renderConstructor();
+  });
+
+  $btnCopiarTodo.addEventListener("click", () => {
+    if (state.seleccionados.size === 0) {
+      mostrarToast("Selecciona al menos un código", true);
+      return;
+    }
+    const txt = construirTextoPlano();
+    const txtFinal = normalizarParaCopiado(txt);
+    const excede = txtFinal.length > LIMITE_CHARS;
+    navigator.clipboard.writeText(txtFinal).then(() => {
+      $btnCopiarTodo.classList.add("copiado");
+      $btnCopiarTodoLabel.textContent = "✓ Copiado";
+      const n = state.seleccionados.size;
+      const baseMsg = `Copiado: ${n} ${n === 1 ? "causal" : "causales"} (${txtFinal.length} chars)`;
+      if (excede) {
+        mostrarToast(baseMsg + " — ⚠ excede 500", true);
+      } else {
+        mostrarToast(baseMsg);
+      }
+      setTimeout(() => {
+        $btnCopiarTodo.classList.remove("copiado");
+        $btnCopiarTodoLabel.textContent = "Copiar respuesta completa";
+      }, 1800);
+    }).catch(() => mostrarToast("No se pudo copiar al portapapeles", true));
+  });
+
+  // Atajo Esc para cerrar el constructor
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape" && state.modoMultiple) {
+      $btnCerrar.click();
+    }
+    if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+      e.preventDefault();
+      $search.focus();
+    }
+  });
+}
+
+// ============ COPIAR + TOAST ============
+function copiarAlPortapapeles(texto, boton, mensaje) {
+  const textoFinal = normalizarParaCopiado(texto);
+  navigator.clipboard.writeText(textoFinal).then(() => {
+    if (boton) {
+      const orig = boton.innerHTML;
+      boton.classList.add("copiado");
+      boton.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Copiado`;
+      setTimeout(() => {
+        boton.classList.remove("copiado");
+        boton.innerHTML = orig;
+      }, 1500);
+    }
+    mostrarToast(mensaje || "Texto copiado al portapapeles");
+  }).catch(() => mostrarToast("No se pudo copiar al portapapeles", true));
+}
+
+function mostrarToast(msg, error) {
+  $toastMsg.textContent = msg;
+  $toast.style.background = error ? "var(--rojo-alerta)" : "var(--azul-oscuro)";
+  $toast.classList.add("visible");
+  clearTimeout($toast._timer);
+  $toast._timer = setTimeout(() => $toast.classList.remove("visible"), 2400);
+}
+
+init();
+</script>
+
+</body>
+</html>
+
